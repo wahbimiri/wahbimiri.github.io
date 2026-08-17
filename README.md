@@ -2,9 +2,9 @@
 
 I build production web and mobile products for businesses, then I security-check them before they go live.
 
-**Qatar** · English / Arabic · open to freelance, full-time, and **relocation**
+**Qatar** · still at Vodafone · also shipping as a full-stack engineer · English / Arabic · open to freelance, full-time, and **relocation**
 
-[wahbimiri.github.io](https://wahbimiri.github.io) · [wahbicharleston@gmail.com](mailto:wahbicharleston@gmail.com) · [LinkedIn](https://www.linkedin.com/in/wahbi-miri-56a66714a)
+[wahbimiri.github.io](https://wahbimiri.github.io) · [wahbi@technologist.com](mailto:wahbi@technologist.com) · [+974 7250 1169](tel:+97472501169) · [LinkedIn](https://www.linkedin.com/in/wahbi-miri-56a66714a)
 
 ---
 
