@@ -8,7 +8,7 @@ I build production web and mobile products for businesses, then I security-check
 
 ---
 
-Client repos stay private. The public page has the work: a German fleet CRM (Next.js, FastAPI, Supabase, Elestio), a coffee store on Cloudflare, [Gomti Contractor](https://gomticontractor.vercel.app), Salon Shabab Al Arab booking, [CampGear](https://mystorecamp.com), a Flutter pet-matching app, and an AI-backed resume builder.
+Client repos stay private. The public page has the work: a fleet CRM for [August Weber GmbH](https://www.august-weber.de/) in Munich (Next.js, FastAPI, Supabase, Elestio), a coffee store on Cloudflare, [Gomti Contractor](https://gomticontractor.vercel.app), Salon Shabab Al Arab booking, [CampGear](https://mystorecamp.com), a Flutter pet-matching app, and an AI-backed resume builder.
 
 **Stack I already ship with:** React, Next.js, Flutter, Supabase (hosted or self-hosted), FastAPI, Cloudflare, Vercel, Netlify, Azure, Elestio, Coolify.
 
