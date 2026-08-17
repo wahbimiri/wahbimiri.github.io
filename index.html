@@ -137,9 +137,9 @@
       <section id="work">
         <div class="wrap">
           <p class="section-label">02 / Selected work</p>
-          <h2>Shipped for real businesses</h2>
+          <h2>Client work</h2>
           <p class="prose" style="margin-bottom: 1.5rem">
-            Source is private. These are products I designed, built, secured, and deployed.
+            Repos stay private. What follows is what the business actually runs.
           </p>
           <div class="work">
             <article class="job">
@@ -173,23 +173,23 @@
             <article class="job">
               <div class="job-meta">
                 <strong>2026</strong>
-                Commerce · EN/AR
+                Coffee shop
                 <br />Cloudflare Pages
               </div>
               <div>
                 <h3>Coffee Impero</h3>
                 <p>
-                  Premium coffee storefront in React and TypeScript. WhatsApp OTP checkout
-                  on a separate API, admin vs customer session isolation, catalog and order
-                  flow, SPA routing on Cloudflare Pages. Fixed a real auth bug where an
-                  admin check was signing store customers out.
+                  Storefront in English and Arabic. Customers order with a WhatsApp OTP,
+                  not a long signup. Catalog, checkout, and an admin side for orders — on
+                  Cloudflare Pages, API separate. One bug I had to kill: checking “is this
+                  an admin?” was signing regular customers out of the same Supabase
+                  session. After that, roles stay out of each other’s way.
                 </p>
                 <ul class="tags">
                   <li>React</li>
-                  <li>Vite</li>
+                  <li>TypeScript</li>
                   <li>Supabase</li>
-                  <li>Cloudflare Pages</li>
-                  <li>WhatsApp API</li>
+                  <li>WhatsApp OTP</li>
                 </ul>
               </div>
             </article>
@@ -197,23 +197,22 @@
             <article class="job">
               <div class="job-meta">
                 <strong>2026</strong>
-                Marketing site
+                Contractor
                 <br />
-                <a href="https://gomticontractor.vercel.app">Live</a>
+                <a href="https://gomticontractor.vercel.app">gomticontractor.vercel.app</a>
               </div>
               <div>
                 <h3>Gomti Contractor</h3>
                 <p>
-                  Next.js App Router site for a contractor, English and Arabic, OpenNext on
-                  Cloudflare Workers, also on Vercel. Services, project gallery, contact
-                  with map, link-in-bio page, JSON-LD, admin-handled contact.
+                  Website for a contractor who needed Arabic and English on the same
+                  pages — services, finished jobs, a map on contact, a links page for
+                  Instagram bios. Built in Next.js, running on Cloudflare Workers and on
+                  Vercel. Contact messages land in an admin they can actually open.
                 </p>
                 <ul class="tags">
                   <li>Next.js</li>
-                  <li>next-intl</li>
+                  <li>EN / AR</li>
                   <li>Cloudflare Workers</li>
-                  <li>Vercel</li>
-                  <li>Supabase</li>
                 </ul>
               </div>
             </article>
@@ -221,23 +220,21 @@
             <article class="job">
               <div class="job-meta">
                 <strong>2025–26</strong>
-                Qatar · booking
+                Barbershop · Qatar
                 <br />Cloudflare Pages
               </div>
               <div>
                 <h3>Salon Shabab Al Arab</h3>
                 <p>
-                  Booking and loyalty for a barbershop: public booking, appointment status,
-                  admin dashboard, services, promotions, customer tiers, email and WhatsApp
-                  confirmations. React, TypeScript, Supabase realtime, Cloudflare Pages.
-                  RLS policies and security headers as part of go-live, not as an afterthought.
+                  The shop takes bookings on the phone and on the site. I built the public
+                  calendar, the “where is my appointment?” check, and the back office:
+                  confirm, WhatsApp, loyalty tiers. React and Supabase. Row-level security
+                  went in before launch, not after the first leak scare.
                 </p>
                 <ul class="tags">
                   <li>React</li>
                   <li>Supabase</li>
-                  <li>Cloudflare</li>
-                  <li>PWA</li>
-                  <li>EN/AR</li>
+                  <li>WhatsApp / email</li>
                 </ul>
               </div>
             </article>
@@ -245,23 +242,22 @@
             <article class="job">
               <div class="job-meta">
                 <strong>2025</strong>
-                Tunisia · e-commerce
+                Camping shop · Tunisia
                 <br />
                 <a href="https://mystorecamp.com">mystorecamp.com</a>
               </div>
               <div>
                 <h3>CampGear</h3>
                 <p>
-                  Camping equipment store: catalog, checkout, Brevo transactional mail.
-                  React and Supabase, deployed for a live shop in TND. The kind of catalog
-                  work where photos, stock, and “order went through” matter more than the
-                  framework.
+                  Live shop in Tunisian dinar: tents, hammocks, chairs, the usual outdoor
+                  pile. Photos, stock, checkout, and a mail when the order is in (Brevo).
+                  React and Supabase. If the order does not show up in the inbox, the site
+                  did not do its job.
                 </p>
                 <ul class="tags">
                   <li>React</li>
                   <li>Supabase</li>
                   <li>Brevo</li>
-                  <li>Netlify / Vercel</li>
                 </ul>
               </div>
             </article>
@@ -270,21 +266,20 @@
               <div class="job-meta">
                 <strong>2026</strong>
                 Mobile
-                <br />Flutter + Supabase
+                <br />Flutter
               </div>
               <div>
                 <h3>PawMate</h3>
                 <p>
-                  Pet matching app: profiles, swipe matching, realtime chat, vet booking,
-                  social feed, adoption, lost and found. Flutter, Riverpod, GoRouter,
-                  Supabase, Cloudflare R2 for media, Google Maps. Privacy and terms shipped
-                  as a separate public page for store review.
+                  People swipe for playdates and breeding, then they chat. Also vet slots,
+                  a feed, adoption, lost-and-found. Flutter on the phone, Supabase behind
+                  it, photos on Cloudflare R2, maps where they need a pin. I shipped a
+                  separate privacy/terms page so store review had something to open.
                 </p>
                 <ul class="tags">
                   <li>Flutter</li>
-                  <li>Riverpod</li>
                   <li>Supabase</li>
-                  <li>Cloudflare R2</li>
+                  <li>R2</li>
                 </ul>
               </div>
             </article>
@@ -292,24 +287,21 @@
             <article class="job">
               <div class="job-meta">
                 <strong>2026</strong>
-                Product + AI
-                <br />Flutter / Astro / Edge
+                Own product
+                <br />Flutter + Edge Functions
               </div>
               <div>
                 <h3>Resume builder</h3>
                 <p>
-                  Native Flutter app plus an Astro marketing site. Users build resumes and
-                  cover letters, import PDFs, score against a job, and search listings.
-                  Supabase for data, Edge Functions for AI jobs, a small Python import
-                  service, RLS hardening migrations. AI is a feature inside a product I
-                  still designed and tested — not the product pretending to be an engineer.
+                  App for writing a CV and a cover letter, pulling text out of a PDF, and
+                  scoring the draft against a job posting. Job search sits next to it.
+                  Flutter client, Supabase, Edge Functions for the model calls, a small
+                  Python service for messy PDFs. The model does not ship the app. I do.
                 </p>
                 <ul class="tags">
                   <li>Flutter</li>
-                  <li>Supabase Edge Functions</li>
-                  <li>Astro</li>
-                  <li>Cloudflare</li>
-                  <li>AI scoring / job search</li>
+                  <li>Supabase</li>
+                  <li>Edge Functions</li>
                 </ul>
               </div>
             </article>
@@ -317,22 +309,42 @@
             <article class="job">
               <div class="job-meta">
                 <strong>2025–26</strong>
-                Ops tools
+                Invoicing
+                <br />Cloudflare
               </div>
               <div>
-                <h3>Invoicing and exam scheduling</h3>
+                <h3>Invoice Generator Pro</h3>
                 <p>
-                  Invoice Generator Pro: quotes, invoices, credit notes, stock/COGS, PDF
-                  templates, Cloudflare deploy. Exam supervision: bilingual school tool
-                  that assigns invigilators fairly, handles absences, encrypts data on the
-                  device, exports Excel. Different domains, same job — make the operations
-                  software boringly reliable.
+                  Quotes, invoices, credit notes, stock with cost of goods, PDF layouts.
+                  Built for people who still live in Excel and need a cleaner PDF out the
+                  other side. React, on Cloudflare.
                 </p>
                 <ul class="tags">
                   <li>React</li>
+                  <li>PDF</li>
                   <li>Cloudflare</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="job">
+              <div class="job-meta">
+                <strong>2025</strong>
+                Schools
+                <br />EN / AR
+              </div>
+              <div>
+                <h3>Exam supervision</h3>
+                <p>
+                  Assigns invigilators so a teacher is not sitting their own subject, then
+                  fills gaps when someone is absent. English and Arabic, Excel in and out.
+                  Teacher names stay encrypted on the device. Schools do not want that
+                  list on a random server.
+                </p>
+                <ul class="tags">
+                  <li>React</li>
+                  <li>Excel</li>
                   <li>Local encryption</li>
-                  <li>Excel / PDF</li>
                 </ul>
               </div>
             </article>
