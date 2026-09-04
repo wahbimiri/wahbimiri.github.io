@@ -409,6 +409,14 @@ h2 {
   max-height: 36rem;
 }
 
+.job--wide .job-shot--desk img {
+  aspect-ratio: 16 / 11;
+  object-fit: cover;
+  object-position: top;
+  background: var(--band);
+  max-height: none;
+}
+
 .job-shot img {
   width: 100%;
   display: block;

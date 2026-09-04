@@ -37,6 +37,12 @@ Flutter app for playdates, breeding, chat, vet slots, feed, adoption, lost-and-f
 
 <img src="./assets/work/petsmatchy.jpg" alt="PetsMatchy feed on a phone" width="280" />
 
+**Resume builder — ATS text-layer PDFs**
+
+Write, score, cover letters, job search. Export is selectable text, not a picture of a CV.
+
+<img src="./assets/work/resume-builder.jpg" alt="Resume Builder landing page" width="680" />
+
 **Also live**
 
 - [Eminence CRM demo](https://wahbimiri.github.io/EminencCRM-demo/) — sales / ops CRM, mock data
@@ -45,6 +51,7 @@ Flutter app for playdates, breeding, chat, vet slots, feed, adoption, lost-and-f
 - [Salon Shabab Al Arab](https://salon-shabab-al-arab.pages.dev) — bookings + back office
 - [CampGear](https://mystorecamp.com) — camping shop, Tunisia
 - [Invoice Generator Pro](https://invoice-generator-pro.pages.dev) — quotes, invoices, stock
+- Resume builder — ATS text-layer PDFs, cover letters, job search (Flutter + Edge Functions)
 
 ---
 
