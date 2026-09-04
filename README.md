@@ -29,7 +29,7 @@ I use **Cursor** to move faster on boilerplate and first drafts. Architecture, t
 
 Next.js desk, FastAPI (invoice parse + DATEV/GoBD Excel), Supabase Auth / RLS, Docker Compose on Elestio. The office uses it now for vehicles, staff, and invoices.
 
-<img src="./assets/work/fleet-crm.jpg" alt="August Weber fleet CRM sign-in" width="680" />
+<img src="./assets/work/fleet-crm.jpg" alt="Fleet CRM operations desk with live figures removed" width="680" />
 
 **PetsMatchy — launches next month (October 2026)**
 

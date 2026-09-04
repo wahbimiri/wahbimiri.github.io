@@ -402,6 +402,36 @@ h2 {
   border-right: 1px solid var(--line);
 }
 
+.job-shots {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  border-right: 1px solid var(--line);
+}
+
+.job--wide > .job-shots {
+  border-right: 1px solid var(--line);
+}
+
+.job--wide .job-shots .job-shot {
+  border-right: 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.job--wide .job-shots .job-shot:last-child {
+  border-bottom: 0;
+}
+
+.job-shot figcaption {
+  margin: 0;
+  padding: 0.45rem 0.75rem;
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  color: var(--muted);
+  background: var(--white);
+  border-top: 1px solid var(--line);
+}
+
 .job--wide .job-shot img {
   aspect-ratio: 4 / 5;
   object-fit: contain;
@@ -718,7 +748,8 @@ footer a {
     grid-template-columns: 1fr;
   }
 
-  .job--wide .job-shot {
+  .job--wide .job-shot,
+  .job--wide > .job-shots {
     border-right: 0;
     border-bottom: 1px solid var(--line);
   }
