@@ -136,34 +136,40 @@
         </dl>
 
         <div class="proof" aria-label="Product screenshots">
-          <a class="proof-card" href="#fleet">
-            <img
-              src="./assets/work/fleet-crm.jpg"
-              width="1024"
-              height="516"
-              alt="Fleet CRM operations desk. Live figures and plates removed."
-              fetchpriority="high"
-            />
-            <span>Fleet CRM · in production</span>
-          </a>
-          <a class="proof-card proof-card--phone" href="#petsmatchy">
-            <img
-              src="./assets/work/petsmatchy.jpg"
-              width="502"
-              height="1024"
-              alt="PetsMatchy feed on a phone"
-            />
-            <span>PetsMatchy · launches next month</span>
-          </a>
-          <a class="proof-card" href="#eminence">
-            <img
-              src="./assets/work/eminence-crm.jpg"
-              width="1400"
-              height="812"
-              alt="Eminence CRM app launcher"
-            />
-            <span>Eminence CRM · live demo</span>
-          </a>
+          <div class="proof-card">
+            <button type="button" class="shot-open" aria-label="Open Fleet CRM screenshot at full size">
+              <img
+                src="./assets/work/fleet-crm-invoices.jpg"
+                width="2180"
+                height="1102"
+                alt="Fleet CRM invoice import with Mistral. Empty queue, no client files."
+                fetchpriority="high"
+              />
+            </button>
+            <a href="#fleet">Fleet CRM · in production · click to zoom</a>
+          </div>
+          <div class="proof-card proof-card--phone">
+            <button type="button" class="shot-open" aria-label="Open PetsMatchy screenshot at full size">
+              <img
+                src="./assets/work/petsmatchy.jpg"
+                width="502"
+                height="1024"
+                alt="PetsMatchy feed on a phone"
+              />
+            </button>
+            <a href="#petsmatchy">PetsMatchy · launches next month · click to zoom</a>
+          </div>
+          <div class="proof-card">
+            <button type="button" class="shot-open" aria-label="Open Eminence CRM screenshot at full size">
+              <img
+                src="./assets/work/eminence-crm.jpg"
+                width="1400"
+                height="812"
+                alt="Eminence CRM app launcher"
+              />
+            </button>
+            <a href="#eminence">Eminence CRM · live demo · click to zoom</a>
+          </div>
         </div>
       </div>
 
@@ -176,7 +182,8 @@
             </div>
             <p>
               Repos stay private. Screenshots are the public UI or an empty local desk —
-              not client records.
+              not client records. Click any picture to open it full size, then click
+              again to zoom.
             </p>
           </div>
           <nav class="jump" aria-label="Jump to a product">
@@ -195,22 +202,26 @@
             <article class="job job--wide" id="fleet">
               <div class="job-shots">
                 <figure class="job-shot job-shot--desk">
-                  <img
-                    src="./assets/work/fleet-crm.jpg"
-                    width="1024"
-                    height="516"
-                    alt="Fleet CRM operations desk. License plates, money, and live counts are removed."
-                  />
-                  <figcaption>Operations desk. Plates, euros, and headcounts hidden.</figcaption>
+                  <button type="button" class="shot-open" aria-label="Open Fleet CRM invoice screenshot at full size">
+                    <img
+                      src="./assets/work/fleet-crm-invoices.jpg"
+                      width="2180"
+                      height="1102"
+                      alt="Fleet CRM invoice import with Mistral. Empty queue, no client files."
+                    />
+                  </button>
+                  <figcaption>Invoice import with Mistral. Click to open full size, then zoom.</figcaption>
                 </figure>
                 <figure class="job-shot job-shot--desk">
-                  <img
-                    src="./assets/work/fleet-crm-invoices.jpg"
-                    width="1024"
-                    height="517"
-                    alt="Fleet CRM invoice import with Mistral. Empty queue, no client files."
-                  />
-                  <figcaption>Invoice import. Empty queue, no client files.</figcaption>
+                  <button type="button" class="shot-open" aria-label="Open Fleet CRM operations screenshot at full size">
+                    <img
+                      src="./assets/work/fleet-crm.jpg"
+                      width="2184"
+                      height="1102"
+                      alt="Fleet CRM operations desk. License plates, money, and live counts are covered."
+                    />
+                  </button>
+                  <figcaption>Operations desk. Plates, euros, and headcounts covered. Click to zoom.</figcaption>
                 </figure>
               </div>
               <div class="job-body">
@@ -241,12 +252,14 @@
 
             <article class="job" id="petsmatchy">
               <figure class="job-shot job-shot--phone">
-                <img
-                  src="./assets/work/petsmatchy.jpg"
-                  width="502"
-                  height="1024"
-                  alt="PetsMatchy feed on a phone, with a pet post and tabs for vets, adoption, and lost pets"
-                />
+                <button type="button" class="shot-open" aria-label="Open PetsMatchy screenshot at full size">
+                  <img
+                    src="./assets/work/petsmatchy.jpg"
+                    width="502"
+                    height="1024"
+                    alt="PetsMatchy feed on a phone, with a pet post and tabs for vets, adoption, and lost pets"
+                  />
+                </button>
               </figure>
               <div class="job-body">
                 <div class="job-meta">
@@ -271,14 +284,14 @@
 
             <article class="job" id="eminence">
               <figure class="job-shot">
-                <a href="https://wahbimiri.github.io/EminencCRM-demo/">
+                <button type="button" class="shot-open" aria-label="Open Eminence CRM screenshot at full size">
                   <img
                     src="./assets/work/eminence-crm.jpg"
                     width="1400"
                     height="812"
                     alt="Eminence CRM published apps launcher with sales, team, and operations apps"
                   />
-                </a>
+                </button>
               </figure>
               <div class="job-body">
                 <div class="job-meta">
@@ -302,7 +315,7 @@
 
             <article class="job" id="coffee">
               <figure class="job-shot">
-                <a href="https://coffeeimpero.com">
+                <button type="button" class="shot-open" aria-label="Open Coffee Impero screenshot at full size">
                   <img
                     src="./assets/work/coffee-impero.jpg"
                     width="1400"
@@ -310,7 +323,7 @@
                     alt="Coffee Impero homepage with portable espresso machines and English–Arabic navigation"
                     loading="lazy"
                   />
-                </a>
+                </button>
               </figure>
               <div class="job-body">
                 <div class="job-meta">
@@ -334,7 +347,7 @@
 
             <article class="job" id="gomti">
               <figure class="job-shot">
-                <a href="https://gomticontractor.vercel.app">
+                <button type="button" class="shot-open" aria-label="Open Gomti Contractor screenshot at full size">
                   <img
                     src="./assets/work/gomti-contractor.jpg"
                     width="1400"
@@ -342,7 +355,7 @@
                     alt="GOMTI VIEW contractor homepage for electrical and fabrication work in Doha"
                     loading="lazy"
                   />
-                </a>
+                </button>
               </figure>
               <div class="job-body">
                 <div class="job-meta">
@@ -365,7 +378,7 @@
 
             <article class="job" id="salon">
               <figure class="job-shot">
-                <a href="https://salon-shabab-al-arab.pages.dev">
+                <button type="button" class="shot-open" aria-label="Open Salon Shabab Al Arab screenshot at full size">
                   <img
                     src="./assets/work/salon-shabab.jpg"
                     width="1400"
@@ -373,7 +386,7 @@
                     alt="Salon Shabab Al Arab booking site with gold navigation over the shop floor"
                     loading="lazy"
                   />
-                </a>
+                </button>
               </figure>
               <div class="job-body">
                 <div class="job-meta">
@@ -396,7 +409,7 @@
 
             <article class="job" id="campgear">
               <figure class="job-shot">
-                <a href="https://mystorecamp.com">
+                <button type="button" class="shot-open" aria-label="Open CampGear screenshot at full size">
                   <img
                     src="./assets/work/campgear.jpg"
                     width="1400"
@@ -404,7 +417,7 @@
                     alt="CampGear store homepage with camping products and a free-delivery offer in Tunisian dinar"
                     loading="lazy"
                   />
-                </a>
+                </button>
               </figure>
               <div class="job-body">
                 <div class="job-meta">
@@ -427,7 +440,7 @@
 
             <article class="job" id="invoice">
               <figure class="job-shot">
-                <a href="https://invoice-generator-pro.pages.dev">
+                <button type="button" class="shot-open" aria-label="Open Invoice Generator Pro screenshot at full size">
                   <img
                     src="./assets/work/invoice-generator.jpg"
                     width="1400"
@@ -435,7 +448,7 @@
                     alt="Invoice Generator Pro dashboard with revenue cards, quick actions, and a sidebar"
                     loading="lazy"
                   />
-                </a>
+                </button>
               </figure>
               <div class="job-body">
                 <div class="job-meta">
@@ -458,13 +471,15 @@
 
             <article class="job job--wide" id="resume">
               <figure class="job-shot job-shot--desk">
-                <img
-                  src="./assets/work/resume-builder.jpg"
-                  width="1024"
-                  height="966"
-                  alt="Resume Builder landing page: ATS-readable text-layer PDFs, modern and classic layouts, cover letters and job search"
-                  loading="lazy"
-                />
+                <button type="button" class="shot-open" aria-label="Open Resume Builder screenshot at full size">
+                  <img
+                    src="./assets/work/resume-builder.jpg"
+                    width="1024"
+                    height="966"
+                    alt="Resume Builder landing page: ATS-readable text-layer PDFs, modern and classic layouts, cover letters and job search"
+                    loading="lazy"
+                  />
+                </button>
               </figure>
               <div class="job-body">
                 <div class="job-meta">
@@ -714,6 +729,20 @@
         </nav>
       </div>
     </footer>
+    <dialog class="shot-viewer" id="shot-viewer" aria-label="Screenshot viewer">
+      <div class="shot-viewer-bar">
+        <p class="shot-viewer-hint">Click the picture to zoom. Scroll or drag when zoomed.</p>
+        <div class="shot-viewer-actions">
+          <button type="button" data-zoom-out aria-label="Zoom out">−</button>
+          <button type="button" data-zoom-in aria-label="Zoom in">+</button>
+          <button type="button" data-zoom-fit>Fit</button>
+          <button type="button" class="shot-viewer-close" data-close>Close</button>
+        </div>
+      </div>
+      <div class="shot-viewer-stage">
+        <img class="shot-viewer-img" alt="" />
+      </div>
+    </dialog>
     <script src="./site.js" defer></script>
   </body>
 </html>

@@ -274,8 +274,6 @@ h1 {
 .proof-card {
   display: flex;
   flex-direction: column;
-  text-decoration: none;
-  color: inherit;
   overflow: hidden;
   border: 1px solid var(--ink);
   background: var(--white);
@@ -300,20 +298,21 @@ h1 {
   background: #12151c;
 }
 
-.proof-card span {
+.proof-card > a {
   display: block;
   padding: 0.7rem 0.85rem;
   font-family: var(--sans);
   font-size: 0.78rem;
   font-weight: 600;
   letter-spacing: 0.02em;
+  text-decoration: none;
   border-top: 1px solid var(--line);
   background: var(--white);
   color: var(--ink);
 }
 
-.proof-card--phone span {
-  background: var(--white);
+.proof-card > a:hover {
+  color: var(--mark);
 }
 
 section {
@@ -441,10 +440,133 @@ h2 {
 
 .job--wide .job-shot--desk img {
   aspect-ratio: 16 / 11;
-  object-fit: cover;
-  object-position: top;
-  background: var(--band);
+  object-fit: contain;
+  object-position: top center;
+  background: #1a1d24;
   max-height: none;
+}
+
+button.shot-open {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: zoom-in;
+  color: inherit;
+  font: inherit;
+  text-align: inherit;
+}
+
+.job-shot--phone .shot-open {
+  width: min(16rem, 100%);
+}
+
+.shot-viewer {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: #141210;
+  color: #f4efe6;
+  z-index: 80;
+}
+
+.shot-viewer:not([open]) {
+  display: none;
+}
+
+.shot-viewer[open] {
+  display: flex;
+  flex-direction: column;
+}
+
+.shot-viewer::backdrop {
+  background: rgba(12, 11, 9, 0.88);
+}
+
+.shot-viewer-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 3.25rem;
+  padding: 0.5rem 0.85rem;
+  border-bottom: 1px solid rgba(244, 239, 230, 0.16);
+  font-family: var(--sans);
+}
+
+.shot-viewer-hint {
+  margin: 0;
+  font-size: 0.85rem;
+  color: rgba(244, 239, 230, 0.78);
+}
+
+.shot-viewer-actions {
+  display: flex;
+  gap: 0.4rem;
+  flex-shrink: 0;
+}
+
+.shot-viewer-actions button {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  color: #f4efe6;
+  background: transparent;
+  border: 1px solid rgba(244, 239, 230, 0.35);
+  padding: 0.28rem 0.65rem;
+  cursor: pointer;
+}
+
+.shot-viewer-close {
+  border-color: #f4efe6 !important;
+}
+
+.shot-viewer-stage {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-in;
+}
+
+.shot-viewer.is-zoomed .shot-viewer-stage {
+  cursor: grab;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.shot-viewer.is-dragging .shot-viewer-stage {
+  cursor: grabbing;
+}
+
+.shot-viewer-img {
+  display: block;
+  max-width: min(96vw, 1400px);
+  max-height: calc(100vh - 4.5rem);
+  width: auto;
+  height: auto;
+  cursor: zoom-in;
+}
+
+.shot-viewer.is-zoomed .shot-viewer-img {
+  max-width: none;
+  max-height: none;
+  cursor: zoom-out;
+}
+
+@media (max-width: 720px) {
+  .shot-viewer-hint {
+    display: none;
+  }
 }
 
 .job-shot img {
@@ -466,6 +588,10 @@ h2 {
   width: min(16rem, 100%);
   aspect-ratio: auto;
   object-fit: contain;
+}
+
+.job-shot--phone .shot-open img {
+  width: 100%;
 }
 
 .job-body {
