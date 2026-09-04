@@ -374,6 +374,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.25rem;
+  grid-auto-flow: dense;
 }
 
 .job {
@@ -588,6 +589,44 @@ button.shot-open {
   width: min(16rem, 100%);
   aspect-ratio: auto;
   object-fit: contain;
+}
+
+.job-shot--plain {
+  aspect-ratio: 16 / 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0.4rem;
+  padding: 1.2rem 1.15rem 1.3rem;
+  background: #1a1d24;
+  color: #f4efe6;
+}
+
+.job-shot--plain .shot-kicker {
+  margin: 0;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(244, 239, 230, 0.5);
+}
+
+.job-shot--plain .shot-plain-title {
+  margin: 0;
+  font-family: var(--type);
+  font-size: 1.55rem;
+  font-weight: 550;
+  letter-spacing: -0.02em;
+  color: #fbf8f2;
+}
+
+.job-shot--plain p:last-child {
+  margin: 0;
+  max-width: 22rem;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: rgba(244, 239, 230, 0.78);
 }
 
 .job-shot--phone .shot-open img {
