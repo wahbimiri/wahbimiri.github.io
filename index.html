@@ -163,8 +163,8 @@
             <button type="button" class="shot-open" aria-label="Open Eminence CRM screenshot at full size">
               <img
                 src="./assets/work/eminence-crm.jpg"
-                width="1400"
-                height="812"
+                width="776"
+                height="248"
                 alt="Eminence CRM app launcher"
               />
             </button>
@@ -211,7 +211,7 @@
                       alt="Fleet CRM invoice import with Mistral. Empty queue, no client files."
                     />
                   </button>
-                  <figcaption>Invoice import with Mistral. Click to open full size, then zoom.</figcaption>
+                  <figcaption>Invoice import with Mistral</figcaption>
                 </figure>
                 <figure class="job-shot job-shot--desk">
                   <button type="button" class="shot-open" aria-label="Open Fleet CRM operations screenshot at full size">
@@ -222,7 +222,7 @@
                       alt="Fleet CRM operations desk. License plates, money, and live counts are covered."
                     />
                   </button>
-                  <figcaption>Operations desk. Plates, euros, and headcounts covered. Click to zoom.</figcaption>
+                  <figcaption>Operations desk — plates and totals covered</figcaption>
                 </figure>
               </div>
               <div class="job-body">
@@ -237,10 +237,13 @@
                   on this — a family-run facility and building-cleaning company in Munich,
                   in business since 1954. The office runs vehicles, employees, invoices,
                   and German accounting exports (GoBD / DATEV) in one place today, not as
-                  a demo. Next.js for the desk, FastAPI for invoice parsing and Excel
-                  (Mistral / openpyxl), Supabase Auth with row-level security. Docker
-                  Compose on Elestio.
+                  a demo.
                 </p>
+                <ul class="job-points">
+                  <li>Next.js desk, FastAPI + Mistral for invoice PDFs, openpyxl for DATEV Excel.</li>
+                  <li>A person still checks the numbers. The model does the reading.</li>
+                  <li>Supabase Auth with row-level security. Docker Compose on Elestio.</li>
+                </ul>
                 <ul class="tags">
                   <li>Next.js</li>
                   <li>FastAPI</li>
@@ -288,8 +291,8 @@
                 <button type="button" class="shot-open" aria-label="Open Eminence CRM screenshot at full size">
                   <img
                     src="./assets/work/eminence-crm.jpg"
-                    width="1400"
-                    height="812"
+                    width="776"
+                    height="248"
                     alt="Eminence CRM published apps launcher with sales, team, and operations apps"
                   />
                 </button>
@@ -494,7 +497,7 @@
               </div>
             </article>
 
-            <article class="job job--wide" id="resume">
+            <article class="job job--split" id="resume">
               <figure class="job-shot job-shot--desk">
                 <button type="button" class="shot-open" aria-label="Open Resume Builder screenshot at full size">
                   <img
@@ -519,6 +522,10 @@
                   Supabase, Edge Functions for the model calls, a small Python service
                   for messy PDFs. The model does not ship the app. I do.
                 </p>
+                <ul class="job-points">
+                  <li>Text-layer PDF — parsers can select every word.</li>
+                  <li>Model calls stay on Edge Functions. Python only when the PDF is ugly.</li>
+                </ul>
                 <ul class="tags">
                   <li>Flutter</li>
                   <li>Supabase</li>

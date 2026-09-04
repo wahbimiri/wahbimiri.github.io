@@ -288,13 +288,17 @@ h1 {
   background: #1a1d24;
 }
 
+.proof-card:last-child img {
+  object-position: left top;
+}
+
 .proof-card--phone {
   background: #12151c;
 }
 
 .proof-card--phone img {
-  object-fit: contain;
-  object-position: center top;
+  object-fit: cover;
+  object-position: center 30%;
   background: #12151c;
 }
 
@@ -375,6 +379,7 @@ h2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.25rem;
   grid-auto-flow: dense;
+  align-items: start;
 }
 
 .job {
@@ -388,7 +393,14 @@ h2 {
 .job--wide {
   grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  grid-template-columns: 1fr;
+}
+
+.job--split {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(20rem, 0.85fr);
+  align-items: stretch;
 }
 
 .job-shot {
@@ -398,27 +410,31 @@ h2 {
 }
 
 .job--wide .job-shot {
-  border-bottom: 0;
-  border-right: 1px solid var(--line);
-}
-
-.job-shots {
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  border-right: 1px solid var(--line);
-}
-
-.job--wide > .job-shots {
-  border-right: 1px solid var(--line);
-}
-
-.job--wide .job-shots .job-shot {
   border-right: 0;
+}
+
+.job--wide > .job-shot {
   border-bottom: 1px solid var(--line);
 }
 
+.job-shots {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-width: 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.job--wide > .job-shots {
+  border-right: 0;
+}
+
+.job--wide .job-shots .job-shot {
+  border-right: 1px solid var(--line);
+  border-bottom: 0;
+}
+
 .job--wide .job-shots .job-shot:last-child {
+  border-right: 0;
   border-bottom: 0;
 }
 
@@ -433,18 +449,45 @@ h2 {
 }
 
 .job--wide .job-shot img {
-  aspect-ratio: 4 / 5;
-  object-fit: contain;
-  background: #1a1d24;
-  max-height: 36rem;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: top center;
+  background: #12151c;
+  max-height: 20rem;
 }
 
+.job--wide > .job-shot img,
 .job--wide .job-shot--desk img {
-  aspect-ratio: 16 / 11;
-  object-fit: contain;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
   object-position: top center;
-  background: #1a1d24;
+  background: #12151c;
+  max-height: 22rem;
+}
+
+.job--split > .job-shot {
+  position: relative;
+  min-height: 0;
+  border-bottom: 0;
+  border-right: 1px solid var(--line);
+  background: #ece8e0;
+}
+
+.job--split .shot-open {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+}
+
+.job--split .shot-open img {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  aspect-ratio: auto;
   max-height: none;
+  object-fit: cover;
+  object-position: top center;
+  background: #ece8e0;
 }
 
 button.shot-open {
@@ -461,7 +504,7 @@ button.shot-open {
 }
 
 .job-shot--phone .shot-open {
-  width: min(16rem, 100%);
+  width: 100%;
 }
 
 .shot-viewer {
@@ -573,31 +616,33 @@ button.shot-open {
 .job-shot img {
   width: 100%;
   display: block;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
   object-position: top;
 }
 
 .job-shot--phone {
   background: #12151c;
-  display: flex;
-  justify-content: center;
-  padding: 1.25rem 1rem 0;
+  display: block;
+  padding: 0;
 }
 
-.job-shot--phone img {
-  width: min(16rem, 100%);
-  aspect-ratio: auto;
-  object-fit: contain;
+.job-shot--phone img,
+.job-shot--phone .shot-open img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center 30%;
 }
 
 .job-shot--plain {
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 16 / 9;
+  min-height: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  gap: 0.4rem;
-  padding: 1.2rem 1.15rem 1.3rem;
+  gap: 0.35rem;
+  padding: 1.2rem 1.25rem 1.15rem;
   background: #1a1d24;
   color: #f4efe6;
 }
@@ -634,10 +679,43 @@ button.shot-open {
 }
 
 .job-body {
-  padding: 1.15rem 1.2rem 1.25rem;
+  padding: 1.15rem 1.2rem 1.2rem;
   display: flex;
   flex-direction: column;
-  flex: 1;
+  gap: 0.45rem;
+}
+
+.job--wide > .job-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(16.5rem, 0.8fr);
+  column-gap: 2rem;
+  row-gap: 0.5rem;
+  align-items: start;
+}
+
+.job--wide > .job-body .job-meta {
+  grid-column: 1 / -1;
+}
+
+.job--wide > .job-body h3,
+.job--wide > .job-body > p {
+  grid-column: 1;
+}
+
+.job--wide > .job-body .job-points {
+  grid-column: 2;
+  grid-row: 2 / 4;
+}
+
+.job--wide > .job-body .tags {
+  grid-column: 1 / -1;
+  margin-top: 0.15rem;
+  padding-top: 0.35rem;
+  border-top: 1px solid var(--line);
+}
+
+#eminence .job-shot img {
+  object-position: left top;
 }
 
 .job-meta {
@@ -648,7 +726,7 @@ button.shot-open {
   font-family: var(--sans);
   font-size: 0.78rem;
   color: var(--muted);
-  margin-bottom: 0.45rem;
+  margin-bottom: 0;
 }
 
 .job-status {
@@ -663,26 +741,32 @@ button.shot-open {
 }
 
 .job h3 {
-  margin: 0 0 0.45rem;
+  margin: 0;
   font-size: 1.28rem;
   font-weight: 600;
 }
 
 .job p {
-  margin: 0 0 0.85rem;
+  margin: 0;
   color: var(--ink);
 }
 
-.job p:last-child {
-  margin-bottom: 0;
+.job-points {
+  margin: 0;
+  padding: 0 0 0 1.1rem;
+  color: var(--ink);
+}
+
+.job-points li + li {
+  margin-top: 0.35rem;
 }
 
 .tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.3rem;
-  margin: auto 0 0;
-  padding: 0.35rem 0 0;
+  margin: 0.15rem 0 0;
+  padding: 0.15rem 0 0;
   list-style: none;
 }
 
@@ -913,10 +997,47 @@ footer a {
     grid-template-columns: 1fr;
   }
 
+  .job--wide > .job-body {
+    grid-template-columns: 1fr;
+  }
+
+  .job--wide > .job-body .job-meta,
+  .job--wide > .job-body h3,
+  .job--wide > .job-body > p,
+  .job--wide > .job-body .job-points,
+  .job--wide > .job-body .tags {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .job--split {
+    grid-template-columns: 1fr;
+  }
+
+  .job--split > .job-shot {
+    position: relative;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+    aspect-ratio: 16 / 9;
+  }
+
+  .job--wide > .job-shots {
+    grid-template-columns: 1fr;
+  }
+
   .job--wide .job-shot,
   .job--wide > .job-shots {
     border-right: 0;
     border-bottom: 1px solid var(--line);
+  }
+
+  .job--wide .job-shots .job-shot {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .job--wide .job-shots .job-shot:last-child {
+    border-bottom: 0;
   }
 }
 
