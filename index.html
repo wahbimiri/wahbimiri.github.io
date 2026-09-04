@@ -6,7 +6,7 @@
     <title>Wahbi Miri — full-stack product engineer</title>
     <meta
       name="description"
-      content="Wahbi Miri builds production web and mobile products (React, Next.js, Flutter, Supabase) and runs a security pass before launch. Based in Qatar. Open to freelance, full-time roles, and relocation."
+      content="Wahbi Miri ships production web and mobile products, with AI wired into real work: invoice parsing, PDF extract, resume scoring. React, Next.js, Flutter, Supabase. Qatar. Open to freelance, full-time, and relocation."
     />
     <link rel="canonical" href="https://wahbimiri.github.io/" />
     <meta name="author" content="Wahbi Miri" />
@@ -14,13 +14,15 @@
     <meta property="og:title" content="Wahbi Miri — full-stack product engineer" />
     <meta
       property="og:description"
-      content="Production web and mobile products. Security-checked before launch. Qatar. Ready to relocate."
+      content="Production stores, CRMs, and mobile apps. AI that already ships. Security-checked before launch. Qatar. Ready to relocate."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://wahbimiri.github.io/" />
-    <meta property="og:image" content="https://avatars.githubusercontent.com/u/210219593?s=400" />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" content="https://wahbimiri.github.io/assets/wahbi-miri.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://wahbimiri.github.io/assets/wahbi-miri.jpg" />
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./assets/wahbi-miri.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -36,7 +38,7 @@
         "url": "https://wahbimiri.github.io/",
         "email": "mailto:wahbi@technologist.com",
         "telephone": "+97472501169",
-        "image": "https://avatars.githubusercontent.com/u/210219593?s=400",
+        "image": "https://wahbimiri.github.io/assets/wahbi-miri.jpg",
         "jobTitle": "Full-stack product engineer",
         "address": {
           "@type": "PostalAddress",
@@ -53,7 +55,9 @@
           "Flutter",
           "Supabase",
           "Cloudflare",
-          "application security"
+          "application security",
+          "AI product integration",
+          "invoice document parsing"
         ]
       }
     </script>
@@ -61,25 +65,44 @@
   <body>
     <a class="skip" href="#work">Skip to work</a>
     <header class="site-header">
+      <div class="wrap topbar">
+        <a class="brand" href="#top">
+          <img src="./assets/wahbi-miri.jpg" width="60" height="70" alt="" />
+          <span>Wahbi Miri</span>
+        </a>
+        <nav class="nav-links" aria-label="Page">
+          <a href="#work">Work</a>
+          <a href="#ai">AI</a>
+          <a href="#security">Security</a>
+          <a href="#hire">Hire</a>
+        </nav>
+        <a class="header-cta" href="mailto:wahbi@technologist.com?subject=Work%20for%20Wahbi%20Miri">Email</a>
+      </div>
+    </header>
+
+    <main id="top">
       <div class="wrap">
-        <div class="topbar">
-          <span>Wahbi Miri · github.com/wahbimiri</span>
-          <nav aria-label="Page">
-            <a href="#work">Work</a>
-            <a href="#security">Security</a>
-            <a href="#stack">Stack</a>
-            <a href="#hire">Hire</a>
-          </nav>
-        </div>
         <div class="hero">
+          <img
+            class="hero-photo"
+            src="./assets/wahbi-miri.jpg"
+            width="900"
+            height="900"
+            alt="Wahbi Miri at a desk in Doha, with a laptop carrying a GitHub sticker"
+            fetchpriority="high"
+          />
           <div>
             <p class="kicker">Available · freelance, contract, full-time · ready to relocate</p>
             <h1>Wahbi Miri</h1>
             <p class="lede">
               I build the product, put it in production, then try to break it myself.
-              Clients hire me for stores, booking systems, CRMs, and mobile apps — not for
-              a slide deck.
+              Companies hire me for stores, CRMs, and mobile apps — and for AI that
+              already does unpaid office work, not a slide about “agents.”
             </p>
+            <div class="hero-actions">
+              <a class="cta" href="mailto:wahbi@technologist.com?subject=Work%20for%20Wahbi%20Miri">Email a brief</a>
+              <a class="cta cta-ghost" href="#work">See the products</a>
+            </div>
             <p class="meta">
               Qatar · English and Arabic ·
               <a href="mailto:wahbi@technologist.com">wahbi@technologist.com</a>
@@ -91,105 +114,201 @@
               <a href="https://github.com/wahbimiri">GitHub</a>
             </p>
           </div>
-          <aside class="aside" aria-label="How to hire">
-            <h2>If you have work</h2>
-            <p>
-              Send the problem, the deadline, and whether this is a build, a rescue, or a
-              hire. I answer as a person who has shipped the last ten projects — not as a
-              generated bio.
-            </p>
-            <ul>
-              <li><a href="mailto:wahbi@technologist.com?subject=Work%20for%20Wahbi%20Miri">Email a brief</a></li>
-              <li><a href="tel:+97472501169">+974 7250 1169</a></li>
-              <li>Open to relocation for the right role</li>
-              <li>Client source stays private; live products below</li>
-            </ul>
-          </aside>
+        </div>
+
+        <dl class="trust">
+          <div>
+            <dt>In production</dt>
+            <dd><a href="https://www.august-weber.de/">August Weber GmbH</a>, Munich</dd>
+          </div>
+          <div>
+            <dt>Next launch</dt>
+            <dd>PetsMatchy · October 2026</dd>
+          </div>
+          <div>
+            <dt>Day job</dt>
+            <dd>Vodafone Qatar · iPay back office</dd>
+          </div>
+          <div>
+            <dt>AI in products</dt>
+            <dd>Invoice parse · PDF extract · scoring</dd>
+          </div>
+        </dl>
+
+        <div class="proof" aria-label="Product screenshots">
+          <a class="proof-card" href="#fleet">
+            <img
+              src="./assets/work/fleet-crm.jpg"
+              width="1200"
+              height="1420"
+              alt="August Weber fleet CRM sign-in"
+              fetchpriority="high"
+            />
+            <span>Fleet CRM · in production</span>
+          </a>
+          <a class="proof-card proof-card--phone" href="#petsmatchy">
+            <img
+              src="./assets/work/petsmatchy.jpg"
+              width="502"
+              height="1024"
+              alt="PetsMatchy feed on a phone"
+            />
+            <span>PetsMatchy · launches next month</span>
+          </a>
+          <a class="proof-card" href="#eminence">
+            <img
+              src="./assets/work/eminence-crm.jpg"
+              width="1400"
+              height="812"
+              alt="Eminence CRM app launcher"
+            />
+            <span>Eminence CRM · live demo</span>
+          </a>
         </div>
       </div>
-    </header>
-
-    <main>
-      <section id="now">
-        <div class="wrap prose">
-          <p class="section-label">01 / Now</p>
-          <h2>What I actually do</h2>
-          <p>
-            Most of my public GitHub is private because it is client work. The pattern is
-            the same: a React or Next.js web app, or a Flutter app, talking to Supabase or
-            another backend, deployed on Cloudflare, Vercel, Netlify, Elestio, or a
-            self-hosted box (Coolify with self-hosted Supabase). Azure when the client
-            already lives there.
-          </p>
-          <p>
-            I still work at Vodafone in Qatar — Premium Business Care, then home
-            internet, now iPay e-wallet complaints and back office — and I also ship
-            products as a full-stack engineer. Banking at QIB and commercial work in
-            Tunisia came before that. I take products from a messy brief to a live URL —
-            bilingual EN/AR when the market needs it, with admin tools, payments or
-            invoicing, and the unglamorous last 20% that makes a business actually use
-            the thing. Right now that includes an internal fleet CRM for
-            <a href="https://www.august-weber.de/">August Weber GmbH</a> in Munich.
-          </p>
-          <p>
-            I use <strong>Cursor</strong> to move faster on boilerplate, refactors, and
-            first drafts. I do not hand the job to the model. Architecture, security
-            checks, product decisions, and the production deploy are mine. If you hire me,
-            you hire the person who owns the result.
-          </p>
-        </div>
-      </section>
 
       <section id="work">
         <div class="wrap">
-          <p class="section-label">02 / Selected work</p>
-          <h2>Client work</h2>
-          <p class="prose" style="margin-bottom: 1.5rem">
-            Repos stay private. What follows is what the business actually runs.
-          </p>
-          <div class="work">
-            <article class="job">
-              <div class="job-meta">
-                <strong>2026</strong>
-                <a href="https://www.august-weber.de/">August Weber GmbH</a>
-                <br />Munich · Elestio
-              </div>
-              <div>
+          <div class="section-head">
+            <div>
+              <p class="section-label">01 / Selected work</p>
+              <h2>What the business actually runs</h2>
+            </div>
+            <p>
+              Repos stay private. Screenshots are the public UI or an empty local desk —
+              not client records.
+            </p>
+          </div>
+          <nav class="jump" aria-label="Jump to a product">
+            <a href="#fleet">Fleet CRM</a>
+            <a href="#petsmatchy">PetsMatchy</a>
+            <a href="#eminence">Eminence CRM</a>
+            <a href="#coffee">Coffee Impero</a>
+            <a href="#gomti">Gomti</a>
+            <a href="#salon">Salon</a>
+            <a href="#campgear">CampGear</a>
+            <a href="#invoice">Invoices</a>
+            <a href="#ai">AI</a>
+          </nav>
+          <div class="work-grid">
+            <article class="job job--wide" id="fleet">
+              <figure class="job-shot">
+                <img
+                  src="./assets/work/fleet-crm.jpg"
+                  width="1200"
+                  height="1420"
+                  alt="Sign-in screen for the August Weber fleet CRM, labelled Anmelden"
+                />
+              </figure>
+              <div class="job-body">
+                <div class="job-meta">
+                  <span class="job-status">In production</span>
+                  <span>2026 · Munich · Elestio</span>
+                  <a href="https://www.august-weber.de/">august-weber.de</a>
+                </div>
                 <h3>Fleet CRM for August Weber</h3>
                 <p>
-                  Internal Fuhrpark and operations system for
-                  <a href="https://www.august-weber.de/">August Weber GmbH</a> — a
-                  family-run facility and building-cleaning company in Munich, in
-                  business since 1954. The office runs vehicles, employees, invoices, and
-                  German accounting exports (GoBD / DATEV) in one place. Next.js for the
-                  desk, FastAPI for invoice parsing and Excel, Supabase Auth with
-                  row-level security, imports that refuse duplicate people. Shipped as a
-                  Docker Compose stack on Elestio.
+                  <a href="https://www.august-weber.de/">August Weber GmbH</a> is already
+                  on this — a family-run facility and building-cleaning company in Munich,
+                  in business since 1954. The office runs vehicles, employees, invoices,
+                  and German accounting exports (GoBD / DATEV) in one place today, not as
+                  a demo. Next.js for the desk, FastAPI for invoice parsing and Excel
+                  (Mistral / openpyxl), Supabase Auth with row-level security. Docker
+                  Compose on Elestio.
                 </p>
                 <ul class="tags">
                   <li>Next.js</li>
                   <li>FastAPI</li>
+                  <li>Mistral</li>
                   <li>Supabase / RLS</li>
-                  <li>Elestio</li>
                   <li>GoBD / DATEV</li>
                 </ul>
               </div>
             </article>
 
-            <article class="job">
-              <div class="job-meta">
-                <strong>2026</strong>
-                Coffee shop
-                <br />Cloudflare Pages
+            <article class="job" id="petsmatchy">
+              <figure class="job-shot job-shot--phone">
+                <img
+                  src="./assets/work/petsmatchy.jpg"
+                  width="502"
+                  height="1024"
+                  alt="PetsMatchy feed on a phone, with a pet post and tabs for vets, adoption, and lost pets"
+                />
+              </figure>
+              <div class="job-body">
+                <div class="job-meta">
+                  <span class="job-status">Launches next month</span>
+                  <span>2026 · Flutter</span>
+                  <a href="https://petsmatchy.com">petsmatchy.com</a>
+                </div>
+                <h3>PetsMatchy</h3>
+                <p>
+                  The app launches next month (October 2026). Playdates, breeding, chat,
+                  vet slots, feed, adoption, lost-and-found. Flutter, Supabase, photos on
+                  Cloudflare R2, maps where they need a pin. Privacy and terms are already
+                  live. Not in the stores yet.
+                </p>
+                <ul class="tags">
+                  <li>Flutter</li>
+                  <li>Supabase</li>
+                  <li>R2</li>
+                </ul>
               </div>
-              <div>
+            </article>
+
+            <article class="job" id="eminence">
+              <figure class="job-shot">
+                <a href="https://wahbimiri.github.io/EminencCRM-demo/">
+                  <img
+                    src="./assets/work/eminence-crm.jpg"
+                    width="1400"
+                    height="812"
+                    alt="Eminence CRM published apps launcher with sales, team, and operations apps"
+                  />
+                </a>
+              </figure>
+              <div class="job-body">
+                <div class="job-meta">
+                  <span class="job-status">Live demo</span>
+                  <span>2026</span>
+                  <a href="https://wahbimiri.github.io/EminencCRM-demo/">Open the demo</a>
+                </div>
+                <h3>Eminence CRM</h3>
+                <p>
+                  Public demo of a Dynamics-style CRM: sales pipeline, commerce,
+                  timesheets, operations, plus an “Ask AI” search on the desk.
+                  Mock data only — any work email, no password.
+                </p>
+                <ul class="tags">
+                  <li>React</li>
+                  <li>TypeScript</li>
+                  <li>GitHub Pages</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="job" id="coffee">
+              <figure class="job-shot">
+                <a href="https://coffeeimpero.com">
+                  <img
+                    src="./assets/work/coffee-impero.jpg"
+                    width="1400"
+                    height="1001"
+                    alt="Coffee Impero homepage with portable espresso machines and English–Arabic navigation"
+                    loading="lazy"
+                  />
+                </a>
+              </figure>
+              <div class="job-body">
+                <div class="job-meta">
+                  <span>2026 · Coffee shop</span>
+                  <a href="https://coffeeimpero.com">coffeeimpero.com</a>
+                </div>
                 <h3>Coffee Impero</h3>
                 <p>
-                  Storefront in English and Arabic. Customers order with a WhatsApp OTP,
-                  not a long signup. Catalog, checkout, and an admin side for orders — on
-                  Cloudflare Pages, API separate. One bug I had to kill: checking “is this
-                  an admin?” was signing regular customers out of the same Supabase
-                  session. After that, roles stay out of each other’s way.
+                  Storefront in English and Arabic. Customers order with a WhatsApp OTP.
+                  Catalog, checkout, and an admin for orders. Roles stay isolated so an
+                  admin check cannot knock a customer out of the same Supabase session.
                 </p>
                 <ul class="tags">
                   <li>React</li>
@@ -200,20 +319,28 @@
               </div>
             </article>
 
-            <article class="job">
-              <div class="job-meta">
-                <strong>2026</strong>
-                Contractor
-                <br />
-                <a href="https://gomticontractor.vercel.app">gomticontractor.vercel.app</a>
-              </div>
-              <div>
+            <article class="job" id="gomti">
+              <figure class="job-shot">
+                <a href="https://gomticontractor.vercel.app">
+                  <img
+                    src="./assets/work/gomti-contractor.jpg"
+                    width="1400"
+                    height="1001"
+                    alt="GOMTI VIEW contractor homepage for electrical and fabrication work in Doha"
+                    loading="lazy"
+                  />
+                </a>
+              </figure>
+              <div class="job-body">
+                <div class="job-meta">
+                  <span>2026 · Contractor · Doha</span>
+                  <a href="https://gomticontractor.vercel.app">gomticontractor.vercel.app</a>
+                </div>
                 <h3>Gomti Contractor</h3>
                 <p>
-                  Website for a contractor who needed Arabic and English on the same
-                  pages — services, finished jobs, a map on contact, a links page for
-                  Instagram bios. Built in Next.js, running on Cloudflare Workers and on
-                  Vercel. Contact messages land in an admin they can actually open.
+                  Arabic and English on the same pages — services, finished jobs, a map
+                  on contact, a links page for Instagram bios. Contact messages land in
+                  an admin they can actually open.
                 </p>
                 <ul class="tags">
                   <li>Next.js</li>
@@ -223,19 +350,28 @@
               </div>
             </article>
 
-            <article class="job">
-              <div class="job-meta">
-                <strong>2025–26</strong>
-                Barbershop · Qatar
-                <br />Cloudflare Pages
-              </div>
-              <div>
+            <article class="job" id="salon">
+              <figure class="job-shot">
+                <a href="https://salon-shabab-al-arab.pages.dev">
+                  <img
+                    src="./assets/work/salon-shabab.jpg"
+                    width="1400"
+                    height="1001"
+                    alt="Salon Shabab Al Arab booking site with gold navigation over the shop floor"
+                    loading="lazy"
+                  />
+                </a>
+              </figure>
+              <div class="job-body">
+                <div class="job-meta">
+                  <span>2025–26 · Barbershop · Qatar</span>
+                  <a href="https://salon-shabab-al-arab.pages.dev">salon-shabab-al-arab.pages.dev</a>
+                </div>
                 <h3>Salon Shabab Al Arab</h3>
                 <p>
-                  The shop takes bookings on the phone and on the site. I built the public
-                  calendar, the “where is my appointment?” check, and the back office:
-                  confirm, WhatsApp, loyalty tiers. React and Supabase. Row-level security
-                  went in before launch, not after the first leak scare.
+                  Public calendar, “where is my appointment?”, and a back office:
+                  confirm, WhatsApp, loyalty. Row-level security went in before launch,
+                  not after the first leak scare.
                 </p>
                 <ul class="tags">
                   <li>React</li>
@@ -245,20 +381,28 @@
               </div>
             </article>
 
-            <article class="job">
-              <div class="job-meta">
-                <strong>2025</strong>
-                Camping shop · Tunisia
-                <br />
-                <a href="https://mystorecamp.com">mystorecamp.com</a>
-              </div>
-              <div>
+            <article class="job" id="campgear">
+              <figure class="job-shot">
+                <a href="https://mystorecamp.com">
+                  <img
+                    src="./assets/work/campgear.jpg"
+                    width="1400"
+                    height="1001"
+                    alt="CampGear store homepage with camping products and a free-delivery offer in Tunisian dinar"
+                    loading="lazy"
+                  />
+                </a>
+              </figure>
+              <div class="job-body">
+                <div class="job-meta">
+                  <span>2025 · Camping shop · Tunisia</span>
+                  <a href="https://mystorecamp.com">mystorecamp.com</a>
+                </div>
                 <h3>CampGear</h3>
                 <p>
-                  Live shop in Tunisian dinar: tents, hammocks, chairs, the usual outdoor
-                  pile. Photos, stock, checkout, and a mail when the order is in (Brevo).
-                  React and Supabase. If the order does not show up in the inbox, the site
-                  did not do its job.
+                  Live shop in Tunisian dinar: photos, stock, checkout, and a mail when
+                  the order is in (Brevo). If the order does not show up in the inbox,
+                  the site did not do its job.
                 </p>
                 <ul class="tags">
                   <li>React</li>
@@ -268,62 +412,28 @@
               </div>
             </article>
 
-            <article class="job">
-              <div class="job-meta">
-                <strong>2026</strong>
-                Mobile
-                <br />Flutter
-              </div>
-              <div>
-                <h3>PawMate</h3>
-                <p>
-                  People swipe for playdates and breeding, then they chat. Also vet slots,
-                  a feed, adoption, lost-and-found. Flutter on the phone, Supabase behind
-                  it, photos on Cloudflare R2, maps where they need a pin. I shipped a
-                  separate privacy/terms page so store review had something to open.
-                </p>
-                <ul class="tags">
-                  <li>Flutter</li>
-                  <li>Supabase</li>
-                  <li>R2</li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="job">
-              <div class="job-meta">
-                <strong>2026</strong>
-                Own product
-                <br />Flutter + Edge Functions
-              </div>
-              <div>
-                <h3>Resume builder</h3>
-                <p>
-                  App for writing a CV and a cover letter, pulling text out of a PDF, and
-                  scoring the draft against a job posting. Job search sits next to it.
-                  Flutter client, Supabase, Edge Functions for the model calls, a small
-                  Python service for messy PDFs. The model does not ship the app. I do.
-                </p>
-                <ul class="tags">
-                  <li>Flutter</li>
-                  <li>Supabase</li>
-                  <li>Edge Functions</li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="job">
-              <div class="job-meta">
-                <strong>2025–26</strong>
-                Invoicing
-                <br />Cloudflare
-              </div>
-              <div>
+            <article class="job" id="invoice">
+              <figure class="job-shot">
+                <a href="https://invoice-generator-pro.pages.dev">
+                  <img
+                    src="./assets/work/invoice-generator.jpg"
+                    width="1400"
+                    height="812"
+                    alt="Invoice Generator Pro dashboard with revenue cards, quick actions, and a sidebar"
+                    loading="lazy"
+                  />
+                </a>
+              </figure>
+              <div class="job-body">
+                <div class="job-meta">
+                  <span>2025–26 · Invoicing</span>
+                  <a href="https://invoice-generator-pro.pages.dev">invoice-generator-pro.pages.dev</a>
+                </div>
                 <h3>Invoice Generator Pro</h3>
                 <p>
                   Quotes, invoices, credit notes, stock with cost of goods, PDF layouts.
-                  Built for people who still live in Excel and need a cleaner PDF out the
-                  other side. React, on Cloudflare.
+                  For people who still live in Excel and need a cleaner PDF out the other
+                  side. Sample data in the browser — not a client’s books.
                 </p>
                 <ul class="tags">
                   <li>React</li>
@@ -333,19 +443,37 @@
               </div>
             </article>
 
-            <article class="job">
-              <div class="job-meta">
-                <strong>2025</strong>
-                Schools
-                <br />EN / AR
+            <article class="job" id="resume">
+              <div class="job-body">
+                <div class="job-meta">
+                  <span class="job-status">AI product</span>
+                  <span>2026 · Flutter + Edge Functions</span>
+                </div>
+                <h3>Resume builder</h3>
+                <p>
+                  Write a CV and a cover letter, pull text out of a PDF, score the draft
+                  against a job posting. Flutter client, Supabase, Edge Functions for the
+                  model calls, a small Python service for messy PDFs. The model does not
+                  ship the app. I do.
+                </p>
+                <ul class="tags">
+                  <li>Flutter</li>
+                  <li>Supabase</li>
+                  <li>Edge Functions</li>
+                </ul>
               </div>
-              <div>
+            </article>
+
+            <article class="job" id="exam">
+              <div class="job-body">
+                <div class="job-meta">
+                  <span>2025 · Schools · EN / AR</span>
+                </div>
                 <h3>Exam supervision</h3>
                 <p>
-                  Assigns invigilators so a teacher is not sitting their own subject, then
-                  fills gaps when someone is absent. English and Arabic, Excel in and out.
-                  Teacher names stay encrypted on the device. Schools do not want that
-                  list on a random server.
+                  Assigns invigilators so a teacher is not sitting their own subject,
+                  then fills gaps when someone is absent. Excel in and out. Teacher names
+                  stay encrypted on the device.
                 </p>
                 <ul class="tags">
                   <li>React</li>
@@ -358,20 +486,69 @@
         </div>
       </section>
 
+      <section id="ai">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <p class="section-label">02 / AI integration</p>
+              <h2>The model does unpaid work. I own the product.</h2>
+            </div>
+            <p>
+              I do not sell a chatbot wrapper. I put a model behind an API the business
+              already uses — invoices, CVs, documents — with keys on the server.
+            </p>
+          </div>
+          <div class="ai-grid">
+            <article class="ai-card">
+              <p class="eyebrow">Shipped · fleet CRM</p>
+              <h3>Invoice documents, not retyping</h3>
+              <p>
+                August Weber’s desk uploads an invoice. FastAPI sends it to Mistral,
+                openpyxl writes the Excel the books need (GoBD / DATEV). A person still
+                checks the numbers. The model does the reading.
+              </p>
+            </article>
+            <article class="ai-card">
+              <p class="eyebrow">Shipped · resume app</p>
+              <h3>PDF extract, then a score</h3>
+              <p>
+                Pull text out of a messy PDF, score the draft against a job posting,
+                draft a cover letter. Edge Functions for the model calls. A small Python
+                service when the PDF is ugly. Nothing of this runs in the browser with a
+                leaked key.
+              </p>
+            </article>
+            <article class="ai-card">
+              <p class="eyebrow">How I work</p>
+              <h3>Cursor is a tool. I am the hire.</h3>
+              <p>
+                I use Cursor on boilerplate, refactors, and first drafts. Architecture,
+                security, product decisions, and the production deploy stay mine. If you
+                hire me, you hire the person who owns the result — not a prompt operator.
+              </p>
+            </article>
+          </div>
+          <p class="ai-note">
+            Same rule on every product: the model is a worker behind my API. Row-level
+            security, env-only secrets, no keys in the client bundle. I still work at
+            Vodafone in Qatar (Premium Business Care, then home internet, now iPay
+            e-wallet complaints and back office) and ship this on the side as a
+            full-stack engineer.
+          </p>
+        </div>
+      </section>
+
       <section id="security">
         <div class="wrap">
-          <p class="section-label">03 / Testing and security</p>
-          <h2>What I check before something goes live</h2>
-          <div class="prose">
+          <div class="section-head">
+            <div>
+              <p class="section-label">03 / Testing and security</p>
+              <h2>What I check before something goes live</h2>
+            </div>
             <p>
-              I treat launch as incomplete until I have tried to abuse the product the way
-              a stranger would. I only do this on systems I own or have written permission
-              to test. I do not sell “hacking.” I find holes, I patch them, I re-test, I
-              write down what closed.
-            </p>
-            <p>
-              The pass follows a fixed order: map the real surface, rank the risks, review
-              the code, validate on a staging or local build, fix, then confirm the fix.
+              Launch is incomplete until I have tried to abuse the product. Only on
+              systems I own or have written permission to test. I find holes, patch,
+              re-test, write down what closed.
             </p>
           </div>
           <ul class="checks">
@@ -417,17 +594,25 @@
             </li>
           </ul>
           <p class="note">
-            On the infrastructure side I also set HTTPS, security headers, tight CORS,
-            WAF/bot rules on Cloudflare when the domain is there, and I keep admin routes
-            off the public happy path. Staging first. No destructive tests on production.
+            HTTPS, security headers, tight CORS, WAF/bot rules on Cloudflare when the
+            domain is there. Admin routes off the public happy path. Staging first. No
+            destructive tests on production.
           </p>
         </div>
       </section>
 
       <section id="stack">
         <div class="wrap">
-          <p class="section-label">04 / Tools I ship with</p>
-          <h2>Not a wishlist. What is already in production.</h2>
+          <div class="section-head">
+            <div>
+              <p class="section-label">04 / Tools I ship with</p>
+              <h2>Not a wishlist. What is already in production.</h2>
+            </div>
+            <p>
+              React or Next.js on the web, Flutter on the phone, Supabase or FastAPI
+              behind it, then Cloudflare, Vercel, Elestio, or a VPS.
+            </p>
+          </div>
           <div class="stack-grid">
             <div>
               <h3>Front</h3>
@@ -443,7 +628,7 @@
             </div>
             <div>
               <h3>AI</h3>
-              <p>Product features: document parse, resume scoring, job search, cover letters. Wired behind my own APIs, with keys server-side.</p>
+              <p>Mistral invoice parse, PDF extract, resume scoring, job search, cover letters. Own APIs. Keys server-side.</p>
             </div>
             <div>
               <h3>Ship</h3>
@@ -459,7 +644,7 @@
 
       <section id="hire">
         <div class="wrap hire-box">
-          <div>
+          <div class="hire-copy">
             <p class="section-label">05 / Work with me</p>
             <h2>Freelance, contract, or a company seat</h2>
             <div class="prose">
@@ -469,15 +654,15 @@
                 the same year.
               </p>
               <p>
-                Good fit: you need someone who can own a product end to end, talk to the
-                business, write the database policies, and still care how the mobile
+                Good fit: you need someone who can own a product end to end, wire AI into
+                a real workflow, write the database policies, and still care how the
                 booking flow feels. Bad fit: you want a prompt operator who never reads
                 the diff.
               </p>
             </div>
-            <p>
+            <p class="hero-actions">
               <a class="cta" href="mailto:wahbi@technologist.com?subject=Work%20for%20Wahbi%20Miri">Email Wahbi</a>
-              <a class="cta" href="https://www.linkedin.com/in/wahbi-miri-56a66714a">LinkedIn</a>
+              <a class="cta cta-ghost" href="https://www.linkedin.com/in/wahbi-miri-56a66714a">LinkedIn</a>
             </p>
           </div>
           <aside class="aside">
@@ -496,8 +681,15 @@
 
     <footer>
       <div class="wrap">
-        Wahbi Miri · this page is the public profile. Client repositories stay private.
+        <span>Wahbi Miri · public profile. Client repositories stay private.</span>
+        <nav aria-label="Footer">
+          <a href="#work">Work</a>
+          <a href="#ai">AI</a>
+          <a href="#security">Security</a>
+          <a href="#hire">Hire</a>
+        </nav>
       </div>
     </footer>
+    <script src="./site.js" defer></script>
   </body>
 </html>
